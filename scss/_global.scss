@@ -37,6 +37,12 @@ h6 {
   @include sans-serif-font;
 }
 
+hr {
+  max-width: 50px;
+  border-width: 3px;
+  border-color: #40aef0;
+}
+
 p {
   font-size: 16px;
   line-height: 1.5;
@@ -88,4 +94,9 @@ img::-moz-selection {
 
 body {
   -webkit-tap-highlight-color: $gray-darker;
+}
+
+.center-middle {
+  top: 50%;
+  position: relative;
 }
