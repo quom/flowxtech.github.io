@@ -89,7 +89,8 @@
             density: 5000, // the lower the denser
             netLineDistance: 200,
             netLineColor: '#4eb1ff',
-            particleColors: ['#40aef0'] // ['#6D4E5C', '#aaa', '#FFC458' ]
+            particleColors: ['#40aef0'], // ['#6D4E5C', '#aaa', '#FFC458' ]
+            interactive: false
         };
         this.canvas = parent.canvas;
         this.ctx = parent.ctx;
@@ -280,12 +281,12 @@
         }.bind(this);
 
         this.canvas.addEventListener('mousemove', this.onMouseMove);
-        this.canvas.addEventListener('touchmove', this.onTouchMove);
+        // this.canvas.addEventListener('touchmove', this.onTouchMove);
         this.canvas.addEventListener('mousedown', this.onMouseDown);
-        this.canvas.addEventListener('touchstart', this.onTouchStart);
+        // this.canvas.addEventListener('touchstart', this.onTouchStart);
         this.canvas.addEventListener('mouseup', this.onMouseUp);
         this.canvas.addEventListener('mouseout', this.onMouseOut);
-        this.canvas.addEventListener('touchend', this.onTouchEnd);
+        // this.canvas.addEventListener('touchend', this.onTouchEnd);
     };
 
     ParticleNetwork.prototype.unbindUiActions = function() {
