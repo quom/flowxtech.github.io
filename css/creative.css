@@ -357,6 +357,9 @@ header.masthead {
   width: 200px;
   clip-path: circle(50% at center);
   -webkit-clip-path: circle(50% at center);
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -o-filter: grayscale(1);
   filter: grayscale(1); }
 
 .what-we-do {
