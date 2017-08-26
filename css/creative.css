@@ -88,7 +88,7 @@ body {
 
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
-  background-color: transparent;
+  background-color: white;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -97,7 +97,6 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     color: #222222;
-    display: none;
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
     #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
       color: #222222; }
@@ -127,8 +126,7 @@ body {
       border-color: rgba(255, 255, 255, 0.3);
       background-color: transparent; }
       #mainNav .navbar-brand {
-        color: rgba(255, 255, 255, 0.7);
-        display: block; }
+        color: rgba(255, 255, 255, 0.7); }
         #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
           color: white; }
       #mainNav .navbar-nav > li.nav-item > a.nav-link,

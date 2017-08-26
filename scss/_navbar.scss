@@ -1,14 +1,13 @@
 // Styling for the navbar
 #mainNav {
   border-color: fade-out($gray-darker, .95);
-  background-color: transparent;
+  background-color: white;
   @include sans-serif-font;
   @include transition-all;
   .navbar-brand {
     font-weight: 700;
     text-transform: uppercase;
     color: $theme-primary;
-    display: none;
     @include sans-serif-font;
     &:focus,
     &:hover {
@@ -47,7 +46,6 @@
     background-color: transparent;
     .navbar-brand {
       color: fade-out(white, .3);
-      display: block;
       &:focus,
       &:hover {
         color: white;
