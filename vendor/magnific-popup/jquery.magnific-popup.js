@@ -1180,7 +1180,7 @@ $.magnificPopup.registerModule('image', {
 				var decr = 0;
 				// fix box-sizing in ie7/8
 				if(mfp.isLowIE) {
-					decr = parseInt(item.img.css('padding-top'), 10) + parseInt(item.img.css('padding-top'),10);
+					decr = parseInt(item.img.css('padding-top'), 10) + parseInt(item.img.css('padding-bottom'),10);
 				}
 				item.img.css('max-height', mfp.wH-decr);
 			}
@@ -1512,7 +1512,7 @@ $.magnificPopup.registerModule('zoom', {
 
 			var offset = el.offset();
 			var paddingTop = parseInt(el.css('padding-top'),10);
-			var paddingBottom = parseInt(el.css('padding-top'),10);
+			var paddingBottom = parseInt(el.css('padding-bottom'),10);
 			offset.top -= ( $(window).scrollTop() - paddingTop );
 
 
